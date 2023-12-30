@@ -1,6 +1,14 @@
-public class VictorianTableTest implements Table {
-    @Override
-    public String placeOn() {
-        return "Placing on a Victorian table";
+package com.example.task51;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class VictorianTableTest {
+
+    @Test
+    void placeOn() {
+        VictorianTable victorianTable = new VictorianTable();
+        assertEquals("Placing on a Victorian table", victorianTable.placeOn());
     }
 }
